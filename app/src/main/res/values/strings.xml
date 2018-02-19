@@ -1,6 +1,7 @@
 <resources>
     <!--  Google Map Api Key  !-->
-    <string name="google_map_api_key">AIzaSyCsVfmYiUJiuKW-C-INCkZg4G2GErG_M9M</string>
+    <!--TODO Insert API Key in below!-->
+    <string name="google_map_api_key"></string>
 
     <!--  Message  !-->
     <string name="network_error">Please check network connection</string>
