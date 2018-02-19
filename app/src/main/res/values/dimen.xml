@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Margin and Padding Size !-->
+    <dimen name="margin_XS">4dp</dimen>
+    <dimen name="margin_S">8dp</dimen>
+    <dimen name="margin_M">16dp</dimen>
+    <dimen name="margin_L">32dp</dimen>
+    <dimen name="margin_XL">50dp</dimen>
+
+    <!-- Text Size !-->
+    <dimen name="text_size_XS">8sp</dimen>
+    <dimen name="text_size_S">14sp</dimen>
+    <dimen name="text_size_M">18sp</dimen>
+    <dimen name="text_size_L">22sp</dimen>
+
+    <dimen name="address_text_size">12sp</dimen>
+</resources>

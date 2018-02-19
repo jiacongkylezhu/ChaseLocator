@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rl_atm_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:paddingLeft="@dimen/margin_M"
+    android:paddingRight="@dimen/margin_M">
+
+    <ImageView
+        android:id="@+id/iv_branch_atm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:src="@drawable/ic_atm_24dp" />
+
+    <TextView
+        android:id="@+id/tv_branch_atm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_M"
+        android:layout_marginTop="@dimen/margin_S"
+        android:layout_toEndOf="@id/iv_branch_atm"
+        android:textStyle="bold"
+        tools:text="@string/atm" />
+
+    <TextView
+        android:id="@+id/tv_distance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_S"
+        android:textStyle="bold"
+        tools:text="@string/distance" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_branch_atm"
+        android:layout_marginStart="@dimen/margin_M"
+        android:layout_toEndOf="@id/iv_branch_atm"
+        tools:text="@string/name" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_name"
+        android:layout_marginStart="@dimen/margin_M"
+        android:layout_marginTop="@dimen/margin_S"
+        android:layout_toEndOf="@id/iv_branch_atm"
+        android:textSize="@dimen/address_text_size"
+        tools:text="@string/address" />
+
+    <TextView
+        android:id="@+id/tv_city_and_zip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_address"
+        android:layout_marginStart="@dimen/margin_M"
+        android:layout_toEndOf="@id/iv_branch_atm"
+        android:textSize="@dimen/address_text_size"
+        tools:text="@string/city_and_zip_code" />
+
+</RelativeLayout>

@@ -1,0 +1,43 @@
+<resources>
+    <!--  Google Map Api Key  !-->
+    <string name="google_map_api_key">AIzaSyCsVfmYiUJiuKW-C-INCkZg4G2GErG_M9M</string>
+
+    <!--  Message  !-->
+    <string name="network_error">Please check network connection</string>
+    <string name="location_message">Please turn on location</string>
+    <string name="network_message">Please turn on Network</string>
+    <string name="permission_message">Please allow device location access to continue</string>
+
+    <!--  Label and Text  !-->
+    <string name="app_name">Chase Locator</string>
+    <string name="atm">ATM</string>
+    <string name="branch">Branch</string>
+    <string name="distance">1.50 miles</string>
+    <string name="name">Mission and 21st</string>
+    <string name="address">2500 Mission St</string>
+    <string name="city_and_zip_code">San Francisco, CA 94110</string>
+    <string name="turn_on_location">Turn on location</string>
+    <string name="turn_on_network">Turn on network</string>
+    <string name="grant_permission">Grant Permission</string>
+    <string name="location_settings">Location Settings</string>
+    <string name="allow">Allow</string>
+    <string name="network_settings">Network Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="miles"> miles</string>
+    <string name="phone_number">(415)647-8069</string>
+    <string name="atms">ATMs</string>
+    <string name="num_of_atms">16</string>
+    <string name="lobby">Lobby</string>
+    <string name="lobby_hrs">Sun Closed\nMon 9:00&#8211;6:00\nTue 9:00&#8211;6:00\nWed 9:00&#8211;6:00
+        \nThu 9:00&#8211;6:00\nFri 9:00&#8211;6:00\nSat 9:00&#8211;6:00</string>
+    <string name="drive_up">Drive&#8211;Up Hours</string>
+    <string name="drive_up_hrs">Sun Closed\nMon Closed\nTue Closed\nWed Closed
+        \nThu Closed\nFri Closed\nSat Closed</string>
+    <string name="type">Type</string>
+    <string name="type_f">Freestanding</string>
+    <string name="edit_text_hint">Search by address, city or zip</string>
+    <string name="list_label">Nearby ATM and Branch: </string>
+
+
+
+</resources>

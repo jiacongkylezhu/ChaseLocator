@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.kylezhudev.chaseatmlocator.DetailActivity">
+
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/margin_S">
+        <fragment
+            android:id="@+id/location_map_fragment_in_detail"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+
+        <ImageView
+            android:id="@+id/iv_branch_atm_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_atm_24dp"
+            app:layout_constraintTop_toBottomOf="@+id/location_map_fragment_in_detail"
+            app:layout_constraintLeft_toLeftOf="@+id/location_map_fragment_in_detail"
+            app:layout_constraintBottom_toBottomOf="@+id/divider_one"/>
+
+        <TextView
+            android:id="@+id/tv_name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_branch_atm"
+            android:layout_marginStart="@dimen/margin_M"
+            android:layout_marginTop="@dimen/margin_S"
+            android:layout_toEndOf="@id/iv_branch_atm"
+            tools:text="@string/name"
+            app:layout_constraintTop_toBottomOf="@+id/location_map_fragment_in_detail"
+            app:layout_constraintLeft_toRightOf="@+id/iv_branch_atm_detail"/>
+        <TextView
+            android:id="@+id/tv_distance_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            tools:text="@string/distance"
+            android:layout_marginEnd="@dimen/margin_S"
+            app:layout_constraintTop_toTopOf="@+id/tv_name_detail"
+            app:layout_constraintRight_toRightOf="@+id/location_map_fragment_in_detail"
+            />
+
+        <TextView
+            android:id="@+id/tv_address_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name"
+            android:layout_marginTop="@dimen/margin_S"
+            android:layout_toEndOf="@id/iv_branch_atm"
+            android:textSize="@dimen/address_text_size"
+            tools:text="@string/address"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name_detail"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_name_detail"/>
+
+        <TextView
+            android:id="@+id/tv_city_and_zip_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/address_text_size"
+            tools:text="@string/city_and_zip_code"
+            app:layout_constraintTop_toBottomOf="@+id/tv_address_detail"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_address_detail"/>
+
+        <TextView
+            android:id="@+id/tv_phone_number_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/address_text_size"
+            tools:text="@string/phone_number"
+            app:layout_constraintTop_toBottomOf="@+id/tv_city_and_zip_detail"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_city_and_zip_detail"/>
+
+        <View
+            android:id="@+id/divider_one"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#727272"
+            android:layout_marginTop="@dimen/margin_M"
+            app:layout_constraintTop_toBottomOf="@+id/tv_phone_number_detail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/tv_atms_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/atms"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_S"
+            android:layout_marginStart="@dimen/margin_M"
+            app:layout_constraintTop_toBottomOf="@+id/divider_one"
+            app:layout_constraintLeft_toRightOf="parent" />
+        <TextView
+            android:id="@+id/tv_num_of_atms_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/num_of_atms"
+            android:layout_marginTop="@dimen/margin_S"
+            android:layout_marginEnd="@dimen/margin_M"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/divider_one"/>
+        <View
+            android:id="@+id/divider_two"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#727272"
+            android:layout_marginTop="@dimen/margin_S"
+            app:layout_constraintTop_toBottomOf="@+id/tv_atms_detail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/tv_lobby_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lobby"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_S"
+            app:layout_constraintTop_toBottomOf="@+id/divider_two"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_atms_detail"/>
+
+        <TextView
+            android:id="@+id/tv_lobby_hrs_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/lobby_hrs"
+            android:textAlignment="textEnd"
+            app:layout_constraintRight_toRightOf="@id/tv_num_of_atms_detail"
+            app:layout_constraintTop_toTopOf="@+id/tv_lobby_detail"/>
+
+        <View
+            android:id="@+id/divider_three"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#727272"
+            android:layout_marginTop="@dimen/margin_S"
+            app:layout_constraintTop_toBottomOf="@+id/tv_lobby_hrs_detail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/tv_drive_up_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/drive_up"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_S"
+            app:layout_constraintTop_toBottomOf="@+id/divider_three"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_lobby_detail"/>
+
+        <TextView
+            android:id="@+id/tv_drive_up_hrs_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="@string/lobby_hrs"
+            android:textAlignment="textEnd"
+            app:layout_constraintRight_toRightOf="@id/tv_lobby_hrs_detail"
+            app:layout_constraintTop_toTopOf="@+id/tv_drive_up_detail"/>
+
+        <View
+            android:id="@+id/divider_four"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#727272"
+            android:layout_marginTop="@dimen/margin_S"
+            app:layout_constraintTop_toBottomOf="@+id/tv_drive_up_hrs_detail"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"/>
+        <TextView
+            android:id="@+id/tv_type_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/margin_S"
+            app:layout_constraintTop_toBottomOf="@+id/divider_four"
+            app:layout_constraintLeft_toLeftOf="@+id/tv_drive_up_detail"/>
+
+        <TextView
+            android:id="@+id/tv_type_f_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/type_f"
+            android:textAlignment="textEnd"
+            app:layout_constraintRight_toRightOf="@id/tv_drive_up_hrs_detail"
+            app:layout_constraintTop_toTopOf="@+id/tv_type_detail"/>
+
+
+
+
+
+
+    </android.support.constraint.ConstraintLayout>
+
+
+
+</ScrollView>
